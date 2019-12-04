@@ -1,3 +1,6 @@
+import unittest
+
+
 class PrepareAutomate:
     def __init__(self, alphabet):
         self.alphabet = alphabet
@@ -75,5 +78,47 @@ d = {
     },
 }
 
-o = Automate(["a", "b", "c"], 'q0', ['q2'], ['q0', 'q1', 'q2'], d)
-print(o.checkWord("abbbbbc"))
+
+
+class TestAutomate(unittest.TestCase):
+
+    def test_1(self):
+        d = {
+            'q0': {
+                'a': 'q0',
+                'b': 'q1'
+            },
+            'q1': {
+                'b': 'q1',
+                'c': 'q2'
+            },
+        }
+        words = ["abbbbbc", "aabbbc", "abbbbbcd"]
+        o = Automate(["a", "b", "c"], 'q0', ['q2'], ['q0', 'q1', 'q2'], d)
+        self.assertFalse([word for word in words if not o.checkWord(
+            word)], "that elements in array, not valid in our automate.")
+
+    def test_2(self):
+        d = {
+            'q0': {
+                'a': 'q0',
+                'b': 'q1',
+                'f': 'q3'
+            },
+            'q1': {
+                'b': 'q1',
+                'c': 'q2'
+            },
+            'q3': {
+                'h': 'q1',
+            }
+        }
+        words = ["afhbbbbbc", "aabbbc", "abbbbbc"]
+        o = Automate(["a", "b", "c", "f", "h"], 'q0', [
+            'q2', 'q3'], ['q0', 'q1', 'q2'], d)
+        self.assertFalse([word for word in words if not o.checkWord(
+            word)], "that elements in array, not valid in our automate.")
+
+
+if __name__ == '__main__':
+    unittest.main()
