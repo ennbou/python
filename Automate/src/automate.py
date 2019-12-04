@@ -89,11 +89,11 @@ class TestAutomate(unittest.TestCase):
                 'b': 'q1'
             },
             'q1': {
-                'b': 'q1',
+                'a': 'q1',
                 'c': 'q2'
             },
         }
-        words = ["abbbbbc", "aabbbc", "abbbbbcd"]
+        words = ["aaaabaaac", "bc", "aac"]
         o = Automate(["a", "b", "c"], 'q0', ['q2'], ['q0', 'q1', 'q2'], d)
         self.assertFalse([word for word in words if not o.checkWord(
             word)], "that elements in array, not valid in our automate.")

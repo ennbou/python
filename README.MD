@@ -1,6 +1,11 @@
 # Automate in Python
 
+>Code source du package Automate.
+
 ## un exemple d'un automate
+
+>Ci-dessue une presenation d'un automate et la relation entre les donnees et les variable dans la class Automate.
+Cette Automate c'est qu'elle j'ai utilise pour test la classe Automate(unitest).
 
 ### presentation graphique
 
@@ -40,3 +45,4 @@
         start = 'q0'
         end = ['q1']
     ```
+
