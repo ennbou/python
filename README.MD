@@ -4,8 +4,8 @@
 
 ## un exemple d'un automate
 
->Ci-dessue une presenation d'un automate et la relation entre les donnees et les variable dans la class Automate.
-Cette Automate c'est qu'elle j'ai utilise pour test la classe Automate(unitest).
+>Ci-dessus une presentation d'un automate et la relation entre les donnees et les variables dans la class Automate.
+>Cette Automate que j'ai utilise pour tester la classe Automate(unitest).
 
 ### presentation graphique
 
@@ -13,7 +13,7 @@ Cette Automate c'est qu'elle j'ai utilise pour test la classe Automate(unitest).
 
 ### traduction du donnees
 
-1. les alphabet
+1. les alphabets
 
     ``` python
     alphabet = ["a", "b", "c"]
@@ -25,7 +25,7 @@ Cette Automate c'est qu'elle j'ai utilise pour test la classe Automate(unitest).
     etats = ["q0", "q1", "q2"]
     ```
 
-3. les transaction
+3. les transactions
 
     ``` python
     transaction = {
