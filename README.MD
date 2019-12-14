@@ -4,7 +4,7 @@
 
 ## un exemple d'un automate
 
->Ci-dessus une presentation d'un automate et la relation entre les donnees et les variables dans la class Automate.
+>Ci-dessus une presentation d'un automate et la relation entre les donnees et les variables dans la classe Automate.
 >Cette Automate que j'ai utilise pour tester la classe Automate(unitest).
 
 ### presentation graphique
