@@ -1,4 +1,4 @@
-import sys 
+import sys
 
 
 class Graph():
@@ -9,14 +9,13 @@ class Graph():
                       for row in range(vertices)]
 
     def printMST(self, parent):
-        print "Edge \tWeight"
+        print("Edge \tWeight")
         for i in range(1, self.V):
-            print parent[i], "-", i, "\t", self.graph[i][parent[i]]
+            print(f"{parent[i]}  -   {i}, \t, {self.graph[i][parent[i]]}")
 
     def minKey(self, key, mstSet):
 
-        # Initilaize min value
-        min = sys.maxint
+        min = sys.maxsize
 
         for v in range(self.V):
             if key[v] < min and mstSet[v] == False:
@@ -27,7 +26,7 @@ class Graph():
 
     def primMST(self):
 
-        key = [sys.maxint] * self.V
+        key = [sys.maxsize] * self.V
         parent = [None] * self.V
 
         key[0] = 0
