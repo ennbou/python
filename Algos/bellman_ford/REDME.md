@@ -6,3 +6,10 @@ L'algorithme de Bellman-Ford est un algorithme de programmation dynamique qui pe
 
 ## Historique
 
+cet algorithme est porte le nom de ses inventeurs Richard Bellman et Lester Randolph Ford junior (publications en 1956 et 1958), et de Edward Forrest Moore qui le redécouvrit en 1959.
+
+## Complexite
+
+## Utilisation de Bellman Ford
+
+Routing Information Protocol (RIP, protocole d'information de routage) est un protocole de routage IP de type Vector Distance (à vecteur de distances) s'appuyant sur l'algorithme de détermination des routes décentralisé Bellman-Ford.
