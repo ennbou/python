@@ -17,7 +17,7 @@ class Graph:
         dist = [float("Inf")] * self.V
         dist[src] = 0
 
-    
+        
         for i in range(self.V - 1):
             
             for u, v, w in self.graph:
